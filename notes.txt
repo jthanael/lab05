@@ -1,0 +1,143 @@
+Game Setup
+1. Create a variable to store a 3x3 string matrix representing the game board. Initialize all elements to the dash character.
+
+
+
+Hint:
+
+matrix = [
+    ["-", "-", "-"],
+    ["-", "-", "-"],
+    ["-", "-", "-"]
+]
+
+
+2. Create a variable to store a list of the players O and X.
+
+
+
+3. Create a variable to store the number of turns taken.
+
+
+
+4. Create a variable to store the winner of the game. Initialize it to None.
+
+
+
+5. Create a while loop to act as the main game loop.
+
+The game will continue until 9 turns have occurred (there are 9 squares on a tic-tac-toe board) or a winner has been declared.
+
+
+
+Inside the Main Program Loop
+6. Display the name of the game, TIC-TAC-TOE.
+
+
+
+7. Print the 2-D matrix representing the game board.
+
+
+
+8. Print a message informing whose turn it is (X or O).
+
+
+
+9. Prompt the player to enter the row and column address identifying where they want to place their next marker on the board.
+
+TIC-TAC-TOE
+ 
+- | - | -
+- | - | -
+- | - | -
+ 
+X's Turn
+Enter row (1-3): 1
+Enter column (1-3): 3
+
+
+10. If the spot the player identifies is not already occupied by a marker, overwrite the data at the specified address within the 2D matrix with either "X" or "O" depending upon whose turn it is.
+
+
+
+11. If a player attempts to select a spot on the board that is already occupied, display the message, "Someone has already claimed row # and col #!" and skip to the next iteration of the game loop.
+
+TIC-TAC-TOE
+ 
+- | - | X
+- | - | -
+- | - | -
+ 
+O's Turn
+Enter row (1-3): 1
+Enter column (1-3): 3
+ 
+Someone has already claimed 1:3!
+ 
+Hit [enter] to continue.
+
+
+12. After the user writes their marker to the 2D matrix, check the matrix to see whether a horizontal, vertical, or diagonal win occurred. If a win occurred, set the winner variable to either "X" or "O", depending on whose current turn it is.
+
+
+
+Horizontal Win Example:
+
+X | X | X
+- | - | -
+- | - | -
+
+
+Vertical Win Example:
+
+X | - | -
+X | - | -
+X | - | -
+
+
+Diagonal Win Example:
+
+X | - | -
+- | X | -
+- | - | X
+
+
+13. At the end of the main game loop increment the turn counter.
+
+
+
+Game Over
+14. When the main game loop terminates, print the 2-D matrix, the name of the winner, inform the player the game is over, and thank them for playing.
+
+TIC-TAC-TOE
+ 
+X | X | O
+- | O | -
+O | - | -
+ 
+O won!
+ 
+Game Over!
+Thanks for playing!
+
+
+15. In the case of a draw (all boxes are marked with no winner declared), specify an appropriate message.
+
+
+
+Test & Debug Your Game!
+16. Test your game to ensure it behaves as expected and that it gracefully handles invalid input (user enters an invalid row or column address or non-numeric character, etc.).
+
+
+
+17. If you find any bugs during testing, fix them!
+
+
+
+Deliverable
+1. Commit and push your changes to GitHub.
+
+
+
+2. Submit the URL pointing to the lab05 directory in your mwcc-cis109 repo.
+
